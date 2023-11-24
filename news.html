@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web-based Educational Platform</title>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="./"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="./">HOME</a></li>
+                <li><a href="./about">ABOUT</a></li>
+                <li><a href="./course">COURSE</a></li>
+                <li><a href="./news">NEWS</a></li>
+                <li><a href="./contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Fresh News</h1>
+</section>
+
+<!-- content -->
+
+<section class="blog-content">
+
+<div class="row">
+    <div class="blog-left">
+        <img src="images/taurus.jpg">
+        <h2>Astronomy Picture of the Day</h2>
+        <p>
+            Along the Taurus Molecular Cloud<br>
+            Image Credit & Copyright: Yuexiao Shen, Joe Hua
+        </p>
+        <br>
+        <p>
+            Explanation: The cosmic brush of star formation composed this interstellar 
+            canvas of emission, dust, and dark nebulae. 
+            A 5 degree wide telescopic mosaic, it frames a region found north of bright 
+            star Aldebaran on the sky, at an inner wall of the local bubble along the Taurus molecular cloud. 
+            At lower left, emission cataloged as Sh2-239 shows signs of embedded young stellar objects.
+        </p>
+        <br>
+        <p>
+            The region's Herbig-Haro objects, nebulosities associated with newly born stars, 
+            are marked by tell-tale reddish jets of shocked hydrogen gas. 
+            Above and right T Tauri, the prototype of the class of T Tauri variable stars, 
+            is next to a yellowish nebula historically known as Hind's Variable Nebula (NGC 1555). 
+            T Tauri stars are now generally recognized as young, less than a few million years old, 
+            sun-like stars still in the early stages of formation.
+        </p> 
+        <br>
+        <p>
+            Tomorrow's picture: Stereo Jupiter <br>
+            Authors & editors: Robert Nemiroff (MTU) & Jerry Bonnell (UMCP) <br>
+            NASA Official: Phillip Newman Specific rights apply. <br>
+            NASA Web Privacy Policy and Important Notices <br>
+            A service of: ASD at NASA / GSFC, <br>
+            NASA Science Activation & Michigan Tech. U.
+        </p>
+
+        <div class="comment-box">
+
+            <h3>Leave a comment</h3>
+
+            <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Enter comment"></textarea>
+                <button type="submit" class="hero-btn blue-btn">POST COMMENT</button>
+            </form>
+
+        </div>
+
+    </div>
+    <div class="blog-right">
+        <h3>Post Categories</h3>
+        <div>
+            <span>Astronomy</span>
+            <span>42</span>
+        </div>
+        <div>
+            <span>Business Analytics</span>
+            <span>21</span>
+        </div>
+        <div>
+            <span>Data Science</span>
+            <span>28</span>
+        </div>
+        <div>
+            <span>Machine Learning</span>
+            <span>15</span>
+        </div>
+        <div>
+            <span>Computer Science</span>
+            <span>34</span>
+        </div>
+        <div>
+            <span>Journalism</span>
+            <span>22</span>
+        </div>
+        <div>
+            <span>Commerce</span>
+            <span>30</span>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>We are on social media</h4>
+    <p>Follow us on our social media to receive more content & updates</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i></p>
+</section>
+
+
+
+<!----- JS for toggle menu ----->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

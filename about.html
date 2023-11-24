@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web-based Educational Platform</title>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="./"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="./">HOME</a></li>
+                <li><a href="./about">ABOUT</a></li>
+                <li><a href="./course">COURSE</a></li>
+                <li><a href="./news">NEWS</a></li>
+                <li><a href="./contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+<!-- content -->
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's Best</h1>
+            <p>Innovative educational web platform, where you can discover a world of knowledge with interactive courses designed to accommodate a variety of learning styles. 
+                Whether you are a student seeking academic success, a professional seeking career advancement or an enthusiast seeking personal growth,
+                join our dynamic community of learners where education is not just a destination, but an exciting journey. Discover the future of learning with our user-friendly interface and enriching content. 
+                Start your educational adventure now!</p>
+            <a href="./course" class="hero-btn blue-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.png">
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>We are on social media</h4>
+    <p>Follow us on our social media to receive more content & updates</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i></p>
+</section>
+
+
+
+<!----- JS for toggle menu ----->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
