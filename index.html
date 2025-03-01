@@ -3,192 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Practice Work</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Web-based Educational Platform</title>
 </head>
 <body>
-<section class="header">
-    <nav>
-        <a href="./"><img src="images/logo.png"></a>
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="./">HOME</a></li>
-                <li><a href="./about">ABOUT</a></li>
-                <li><a href="./course">COURSE</a></li>
-                <li><a href="./news">NEWS</a></li>
-                <li><a href="./contact">CONTACT</a></li>
-            </ul>
+<!-- Navigational Bar -->
+<header id="header">
+    <nav class="nav-bar">
+        <div class="logo">
+            <h1 class="nav-elem">SOC2040-LAB-ASSIGNMENT</h1>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <div class="links">
+            <a href="#links" class="nav-elem">Links</a>
+            <a href="#" class="nav-elem">Other</a>
+        </div>
     </nav>
-
-<div class="text-box">
-    <h1>World's Best Educational Platform</h1>
-    <p>
-        Open the world of knowledge with us!
-    </p>
-    <a href="#course" class="hero-btn round-btn">Let's Start The Journey</a>
-</div>
-        
-</section>
-
-<!-- Course -->
-
-<section class="course" id="course">
-    <h1>Courses We Offer</h1>
-    <p>Click on button and download useful zip files, containing curriculum, knowledge and exersises.</p>
-
-    <div class="row">
-        <div class="course-col">
-            <a href="https://drive.google.com/uc?export=download&id=1cKwnPRnzz5dytAwQpPLimtWhSmY4JYsy">
-            <h3>School Program</h3>
-            <p>Download files to refresh your memory, learn something new, or fill in gaps from the school curriculum.</p></a>
-        </div>
-        <div class="course-col">
-            <a href="https://drive.google.com/uc?export=download&id=1hZIJ6f42tEAWu_8GBMqA7v5hE_tDab2Z">
-            <h3>Pre-University Program</h3>
-            <p>Download the files in order to prepare for entering a university, consolidate the knowledge acquired at school, or simply learn something new.</p></a>
-        </div>
-        <div class="course-col">
-            <a href="https://drive.google.com/uc?export=download&id=1m6a6OYO2Y4jehGFwd-CbVuGtMDLyro20">
-            <h3>Extra</h3>
-            <p>Download files to expand your knowledge, broaden your horizons and become smarter than everyone else.</p></a>
-        </div>
+</header>
+<!-- Content( About & EasterEgg pages ) -->
+<div class="content">
+    <div id="front-page">
+        <h1 class="fp-large">LAB-1 Links</h1>
+        <p class="fp-small">Youkoso!</p>
     </div>
-</section>
+    <div id="knowledge">
+        <h1 id="links">Links</h1>
 
-<!-- Campus -->
-
-<section class="campus">
-    <h1>Explore The Platform</h1>
-    <p>discover, study, enjoy</p>
-
-    <div class="row">
-        <div class="campus-col">
-            <a href="./news">
-            <img src="images/news.jpg">
-            <div class="layer">
-                <h3>NEWS</h3>
-            </div></a>
+        <!-- First file container -->
+        <div class="file-container">
+            <p class="file-name">SOC2040 SP LAB ASSIGNMENT 1 QUESTIONS SPRING 2025</p>
+            <label>
+                <input type="text" value="https://drive.google.com/file/d/1XNkZMLvfoAqY-Y_mLin0S3uNo9uVn6pE/view?usp=drive_link" id="myInput1">
+            </label>
+            <button onclick="copyText('myInput1')" class="copy-button">Copy text</button>
         </div>
-        <div class="campus-col">
-            <a href="./course">
-            <img src="images/course.jpg">
-            <div class="layer">
-                <h3>CURRICULUM</h3>
-            </div></a>
-        </div>
-        <div class="campus-col">
-            <a href="./contact">
-            <img src="images/facilities.jpg">
-            <div class="layer">
-                <h3>FACILITIES</h3>
-            </div></a>
-        </div>
-    </div>
-</section>
 
-<!-- Facilities -->
-
-<section class="facilities">
-    <h1>Helpful Applications</h1>
-    <p>Tap to follow the link</p>
-
-    <div class="row">
-        <div class="facilities-col">
-            <a href="https://www.wolframalpha.com/" target="_blank">
-            <img src="images/wolfram.png">
-            <h3>Wolfram Alpha</h3></a>
-            <p>Is a knowledge base and a set of computational algorithms, question-answer system. Launched May 15, 2009. It is not a search engine.</p>
+        <!-- Second file container -->
+        <div class="file-container">
+            <p class="file-name">Top 10 anime phrases</p>
+            <label>
+                <input type="text" value="https://docs.google.com/document/d/1H3KaYmlw1gxJPtzd3Pf6BLpaFoVvgjvU/edit?usp=drive_link&ouid=105585810731055551116&rtpof=true&sd=true" id="myInput2">
+            </label>
+            <button onclick="copyText('myInput2')" class="copy-button">Copy text</button>
         </div>
-        <div class="facilities-col">
-            <a href="https://context.reverso.net/" target="_blank">
-            <img src="images/reverso.png">
-            <h3>Reverso Content</h3></a>
-            <p>Is a website specializing in automated translation and language learning assistance. The site offers online dictionaries, contextual translation, spell checking, synonym search, and grammatical conjugation tools. The site is maintained by the French company Reverso-Softissimo.</p>
-        </div>
-        <div class="facilities-col">
-            <a href="https://claude.ai/" target="_blank">
-            <img src="images/claude.png">
-            <h3>Claude AI</h3></a>
-            <p>Is a next-generation AI assistant for your tasks, no matter the scale. Our API is currently being offered to a limited set of customers and researchers.</p>
-        </div>
-    </div>
-</section>
 
-<!-- comments -->
+        <script>
+            function copyText(inputId) {
+                // Get the input element by id
+                const input = document.getElementById(inputId);
 
-<div class="testimonials">
-    <h1>What Our Users Says</h1>
-    <p>Your opinion is very important to us, please wait.</p>
-
-    <div class="row">
-        <div class="testimonial-col">
-            <img src="images/user1.jpg">
-            <div>
-                <p>The best web-based online educational platform I've ever seen!!!</p>
-                <h3>NeSamir Ismailov</h3>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-            </div>
-        </div>
-        <div class="testimonial-col">
-            <img src="images/user2.jpg">
-            <div>
-                <p>It is really the best web-based online educational platform I've ever seen! But I'm a critic, so 4 stars.</p>
-                <h3>Cool_User1337</h3>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-        </div>
+                // Use the Clipboard API to write the text to the clipboard
+                navigator.clipboard.writeText(input.value).then(() => {
+                    // Optionally, show a success message that the text has been copied
+                    alert("Text copied: " + input.value);
+                }).catch((err) => {
+                    // If there's an error, show an alert
+                    console.error('Failed to copy text: ', err);
+                    alert("Failed to copy text.");
+                });
+            }
+        </script>
     </div>
 </div>
-
-<!-- Call To Action -->
-
-<section class="cta">
-    <h1>Tell Us Your Opinion<br>Your Opinion Is Very Important To Us</h1>
-    <a href="./contact" class="hero-btn round-btn">CONTACT US</a>
-</section>
-
 <!-- Footer -->
-<section class="footer">
-    <h4>We are on social media</h4>
-    <p>Follow us on our social media to receive more content & updates</p>
-        <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-        </div>
-        <p>Made with <i class="fa-regular fa-heart"></i></p>
-</section>
-
-
-
-<!----- JS for toggle menu ----->
-<script>
-
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-
-</script>
-
+<footer id="footer">
+    <div class="thanks">
+        <h3 class="footer-text">Thanks for coming!</h3>
+        <h3 class="footer-text">The END.</h3>
+    </div>
+</footer>
 </body>
 </html>
